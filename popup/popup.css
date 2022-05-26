@@ -1,0 +1,90 @@
+/* Cerise	#DE3163	rgb(222, 49, 99) */
+
+:root {
+    --bs-primary-rgb: 222, 49, 99;
+    --primary: rgb(var(--bs-primary-rgb));
+}
+
+body {
+    min-width: 500px;
+    max-width: 580px;
+}
+
+#intro-div {
+    background-image: linear-gradient(180deg, #FDEB71, rgba(255, 127, 80, 0.75));
+    min-height: 100%;
+    transition: all 2s ease-in-out;
+}
+
+.header-img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-primary, .btn-primary:focus, .btn-primary:active, .btn-primary:hover { 
+    background-color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: none; 
+}
+
+.note-header {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+}
+
+.note {
+    margin: 5px;
+}
+
+.note-body-editable {
+    outline: none;
+    border: 0.5px solid lightgray;
+    background-color: white;
+    padding: 5px;
+}
+
+.note-header > h6 {
+    outline: none;
+}
+
+.nav {
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.nav::-webkit-scrollbar-button { height: 5px; }
+
+.nav-link {
+    display: inline-block;
+}
+
+.colorDot, .hcolorDot {
+    width: 20px;
+    height: 20px;
+    border: 1px solid lightgray;
+}
+
+#notebookCreator {
+    background-color: royalblue;
+    border-radius: 50%;
+}
+
+#notebookDeletor {
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+@keyframes slideLeft {
+    from {
+        height: fit-content;
+        opacity: 1;
+    }
+    to {
+        height: 0px;
+        opacity: 0;
+    }
+}
